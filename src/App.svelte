@@ -1,5 +1,6 @@
 <script lang="ts">
   import Tailwindcss from "./Tailwindcss.svelte";
+  import Header from "./components/Header.svelte";
 
   export let name: string;
 
@@ -12,9 +13,9 @@
   }
 </script>
 
-<Tailwindcss />
-<main>
-  <p><button class="btn btn-blue" on:click={click1}>1に投票</button></p>
+<Header />
+<main class="pt-96">
+  <p><button class=" btn btn-blue" on:click={click1}>1に投票</button></p>
   <p><button class="btn btn-blue" on:click={click2}>2に投票</button></p>
 </main>
 
